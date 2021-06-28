@@ -10,7 +10,7 @@
 	</parent>
 	<groupId>com.chcraft</groupId>
 	<artifactId>erdtojava</artifactId>
-	<version>0.0.1-SNAPSHOT</version>
+	<version>0.0.1</version>
 	<packaging>war</packaging>
 	<name>erdtojava</name>
 	<description>erd를 java class 파일로 만듬</description>
