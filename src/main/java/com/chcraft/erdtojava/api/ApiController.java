@@ -10,6 +10,7 @@ import com.chcraft.erd.Relationship;
 import com.chcraft.erd.utils.JavaFileGenerator;
 import com.chcraft.erd.utils.SQLFileGenerator;
 import com.chcraft.erdtojava.api.param.JavaParam;
+import com.chcraft.erdtojava.api.param.SQLParam;
 
 @RestController
 public class ApiController {
@@ -21,6 +22,11 @@ public class ApiController {
 	@PostMapping("/java")
 	public String toJava(@RequestBody JavaParam param) {
 		return jfg.generateFileString(param.getEntity(), param.getPackagePath(), param.isGenerateGetterAndSetter());
+	}
+
+	@PostMapping("/sql")
+	public String toSQL(@RequestBody SQLParam param) {
+		return "not implemented";
 	}
 
 	@PostMapping("/sql/entity")
