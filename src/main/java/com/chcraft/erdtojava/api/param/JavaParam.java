@@ -1,4 +1,4 @@
-package com.chcraft.erdtojava.api;
+package com.chcraft.erdtojava.api.param;
 
 import com.chcraft.erd.Entity;
 
