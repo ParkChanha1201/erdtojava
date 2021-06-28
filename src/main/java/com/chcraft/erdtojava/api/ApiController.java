@@ -26,7 +26,7 @@ public class ApiController {
 
 	@PostMapping("/sql")
 	public String toSQL(@RequestBody SQLParam param) {
-		return "not implemented";
+		return sfg.generateFileString(param.getEntities(), param.getRelationships());
 	}
 
 	@PostMapping("/sql/entity")
