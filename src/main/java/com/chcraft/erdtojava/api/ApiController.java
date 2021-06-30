@@ -14,7 +14,7 @@ import com.chcraft.erdtojava.api.param.JavaParam;
 import com.chcraft.erdtojava.api.param.SQLParam;
 
 @RestController
-@CrossOrigin(origins = "*")
+@CrossOrigin(origins = "*",allowedHeaders = "*" )
 public class ApiController {
 	@Autowired
 	JavaFileGenerator jfg;
