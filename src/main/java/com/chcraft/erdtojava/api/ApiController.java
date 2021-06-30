@@ -1,6 +1,7 @@
 package com.chcraft.erdtojava.api;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RestController;
@@ -13,6 +14,7 @@ import com.chcraft.erdtojava.api.param.JavaParam;
 import com.chcraft.erdtojava.api.param.SQLParam;
 
 @RestController
+@CrossOrigin(origins = "*")
 public class ApiController {
 	@Autowired
 	JavaFileGenerator jfg;
