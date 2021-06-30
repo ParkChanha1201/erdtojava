@@ -13,7 +13,7 @@ import com.chcraft.erd.utils.SQLFileGenerator;
 import com.chcraft.erdtojava.api.param.JavaParam;
 import com.chcraft.erdtojava.api.param.SQLParam;
 
-@CrossOrigin("*")
+@CrossOrigin(originPatterns = "*", allowCredentials = "true")
 @RestController
 public class ApiController {
 	@Autowired
